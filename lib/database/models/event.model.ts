@@ -19,29 +19,29 @@ export interface IEvent extends Document {
 
 const EventSchema = new Schema({
   title: {
-    type: [String, "This value must be a string"],
+    type: String,
     required: [true, "Please provide event title"],
   },
   description: {
-    type: [String, "This value must be a string"],
+    type: String,
   },
   location: {
-    type: [String, "This value must be a string"],
+    type: String,
   },
   createdAt: {
     type: Date,
     default: Date.now()
   },
   imgaeUrl: {
-    type: [String, "This value must be a string"],
+    type: String,
     required: [true, "Please provide an image for the event"],
   },
   startDateTime: {
-    type: [String, "This value must be a string"],
+    type: String,
     default: Date.now()
   },
   endDateTime: {
-    type: [String, "This value must be a string"],
+    type: String,
     default: Date.now()
   },
   price: {
